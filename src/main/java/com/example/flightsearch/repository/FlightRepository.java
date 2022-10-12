@@ -1,10 +1,10 @@
 package com.example.flightsearch.repository;
 
+import com.example.flightsearch.entity.Flight;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.example.flightsearch.entity.Flight;
 
 @Repository
-public interface FlightRepository extends JpaRepository<Flight, Long> {
+public interface FlightRepository extends JpaRepository<Flight, Long>, FlightCustomRepository {
 
 }
